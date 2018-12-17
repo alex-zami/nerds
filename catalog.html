@@ -3,6 +3,9 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Дизайн-студия Nёrd's</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+	<link href="css/normalize.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
 </head>
 <body>
 	<header class="main-header">
@@ -17,7 +20,9 @@
 				<li><a href="contacts.html">Контакты</a></li>
 			</ul>
 			<ul class="user-navigation">
-				<li class="cart">Корзина</li>
+				<li class="cart">
+					<a class="cart" href="cart.html">Корзина</a>
+				</li>
 			</ul>
 		</nav>
 	</header>
@@ -26,20 +31,80 @@
 		<h1 class="page-title">Магазин готовых шаблонов</h1>
 		<section class="filters">
 			<h2 class="visually-hidden">Фильтр товаров</h2>
-			<!-- Здесь будет форма -->
+			<form class="filter" method="get" action="https://echo.htmlacademy.ru">	
+				<fieldset>
+                    <legend>Стоимость:</legend>
+                    <ul>
+                        <li class="filter-option">
+                        	<label for="filter-price-from">От</label>
+                            <input class="filter-input filter-price" type="text" name="price-from" id="filter-price-from" placeholder="0">
+                            
+                        </li>
+                        <li class="filter-option">
+                        	<label for="filter-price-to">До</label>
+                            <input class="filter-input filter-price" type="text" name="price-to" id="filter-price-to" placeholder="15000">
+                        </li>
+                    </ul>
+                </fieldset>
+				<fieldset>
+					<legend>Сетка:</legend>
+					<ul>
+						<li class="filter-option">
+                            <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="shaving" id="filter-adaptive" checked>
+                            <label for="filter-adaptive">Адаптивная</label>
+                        </li>
+                        <li class="filter-option">
+                            <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="hair-care" id="filter-fix">
+                            <label for="filter-fix">Фиксированная</label>
+                        </li>
+                        <li class="filter-option">
+                            <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="accessories" id="filter-rubber">
+                            <label for="filter-rubber">Резиновая</label>
+                        </li>
+					</ul>
+				</fieldset>
+				<fieldset>
+					<legend>Особенности:</legend>
+					<ul>
+						<li class="filter-option">
+                            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="slider" id="filter-slider"
+                                checked>
+                            <label for="filter-slider">Слайдер</label>
+                        </li>
+                        <li class="filter-option">
+                            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="features-block" id="filter-features-block">
+                            <label for="filter-features-block">Блок преимуществ</label>
+                        </li>
+                        <li class="filter-option">
+                            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="news" id="filter-news"
+                                checked>
+                            <label for="filter-news">Новости</label>
+                        </li>
+                        <li class="filter-option">
+                            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="gallery" id="filter-gallery">
+                            <label for="filter-gallery">Галерея</label>
+                        </li>
+                        <li class="filter-option">
+                            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="cart" id="filter-cart">
+                            <label for="filter-cart">Корзина</label>
+                        </li>
+					</ul>	
+				</fieldset>
+				<button type="submit" class="filter-button button">Показать</button>
+			</form>
 		</section>
 
-		<section class="cataloge">
+		<section class="catalog">
 			<h2 class="visually-hidden">Каталог готовых шаблонов</h2>
-			<h3 class="sort-list">Сортировать:</h3>
+			<b>Сортировать:</b>
 			<ul class="sort-list">
-				<li><a href="#">По цене</a></li>
-				<li><a href="#">По типу</a></li>
-				<li><a href="#">По названию</a></li>
+				<li><a href="#" class="sort-item sort-item-active">По цене</a></li>
+				<li><a href="#" class="sort-item sort-item-disabled">По типу</a></li>
+				<li><a href="#" class="sort-item sort-item-disabled">По названию</a></li>
 			</ul>
 			<ul class="sort-up-down">
-				<li><button class="btn-up-down" type="button">По убыванию</button></li>
-				<li><button class="btn-up-down" type="button">По возрастанию</button></li>	
+				<li><a class="btn btn-up-down">По убыванию</a></li>
+				<li><a class="btn btn-up-down">По возрастанию</a></li>	
 			</ul>	
 			<ul class="catalog-list">
 				<li class="catalog-item">
@@ -119,7 +184,7 @@
 				</li>
 			</ul>
 			<ul class="pagination-list">
-				<li class="pagination-item pagination-item-current"><a href="#">1</a></li>
+				<li class="pagination-item pagination-item-current"><a>1</a></li>
 				<li class="pagination-item"><a href="#">2</a></li>
 				<li class="pagination-item"><a href="#">3</a></li>
 				<li class="pagination-item"><a href="#">Следующая</a></li>
@@ -154,9 +219,24 @@
 	
 	<section class="modal modal-write-us">
 		<h2>Напишите нам</h2>
-		<!-- Здесь будет форма -->
-		<buttom class="modal-close">x</button>
-		<buttom class="modal-act">Отправить</button>	
+		<form class="write-us-form" action="https://echo.htmlacademy.ru">
+			<p>
+				<label class="write-us-name">Ваше имя:
+					<input type="text" name="name" placeholder="Имя Фамилия">
+				</label>
+			</p>	
+			<p>
+				<label class="write-us-email">Ваш e-mail:
+					<input type="email" name="e-mail" placeholder="email@example.com">
+				</label>
+			</p>
+				<label class="write-us-text">Текст писмьа:
+					<textarea name="text" id="" cols="30" rows="10" placeholder="В свободнйо форме"></textarea>
+				</label>
+			</p>
+			<button class="button" type="submit">Отправить</button>	
+		</form>
+		<button class="modal-close" type="button">Закрыть</button>			
 	</section>
 
 </body>

@@ -1,0 +1,285 @@
+body {
+	margin: 0;
+	padding: 0;
+
+	font-family: "Roboto", Arial, sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+	color: #283136;
+}
+
+a {
+	text-decoration: none;
+}
+
+h1 {
+	background-color: #eeeeee;
+}
+
+.button {
+	font: inherit;
+
+	text-align: center;
+	font-weight: 500;
+	color: #ffffff;
+	vertical-align: middle;
+	text-transform: uppercase;
+
+	background-color: #fb565a;
+	border: none;
+}
+
+.button:hover {
+	background-color: #e74246;
+}
+
+.button:active {
+	color: rgba(0, 0, 0, 0.30);
+	background-color: #d7373b;
+}
+
+.main-navigation {
+	color: #ffffff;
+	font-weight: 500;
+	line-height: 30px;
+	text-transform: uppercase;
+
+	background-color: #eeeeee;
+}
+
+.site-navigation,
+.user-navigation {
+	list-style: none;
+}
+
+.site-navigation a,
+.user-navigation a {
+	color: #000000;
+}
+
+.site-navigation a:hover,
+.user-navigation a:hover {
+	color: #fb565a;
+}
+
+.site-navigation a:active,
+.user-navigation a:active {
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.features {
+	background-color: #eeeeee;
+	list-style: none;
+}
+
+.slider-features h3 {
+	font-size: 55px;
+	line-height: 55px;
+	font-weight: 500;
+	color: #000000;
+}
+
+.services {
+	list-style: none;
+}
+
+.service h3 {
+	font-size: 24px;
+	line-height: 30px;
+	font-weight: 700;
+	color: #000000;
+	text-transform: uppercase;
+}
+
+.service-application a {
+	background-color: #00ca74;
+}
+
+.service-application a:hover {
+	background-color: #00bc6c;
+}
+
+.service-application a:active {
+	color: rgba(0, 0, 0, 0.30);
+	background-color: #00aa62;
+}
+
+.service-presentation a {
+	background-color: #efc84a;
+}
+
+.service-presentation a:hover {
+	background-color: #eab534;
+}
+
+.service-presentation a:active {
+	color: rgba(0, 0, 0, 0.30);
+	background-color: #e5a722;	
+}
+
+.about-us-main {
+	font-size: 55px;
+	line-height: 55px;
+	color: #000000;
+
+}
+
+.about-us h3 {
+	color: #000000;
+	text-transform: uppercase;
+}
+
+.about-us-orders {
+	list-style: none;
+}
+
+.stat-value {
+	font-size: 45px;
+	font-weight: 700;
+	color: #000000;
+}
+
+.clients-list {
+	list-style: none;
+}
+
+.clients-list {
+	font: inherit;
+}
+
+.filter fieldset {
+	border: none;
+}
+
+.filter legend,
+.catalog b {
+	color: #000000;
+	font-size: 18px;
+	line-height: 30px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.filter ul {
+	list-style: none;
+	line-height: 20px;
+}
+
+.filter-price {
+	background-color: #eeeeee;
+	border: none;
+	border-radius: 2px; 
+}
+
+.filter-button {
+	color: #000000;
+	background-color: #eeeeee;
+}
+
+.filter-button:hover {
+	background-color: #dfdfdf;
+}
+
+.filter-button:active {
+	background-color: #dfdfdf;
+	color: rgba(1,1,1,0.30);
+}
+
+.sort-list,
+.sort-up-down,
+.pagination-list {
+	list-style: none;
+}
+
+.sort-item {
+	font-size: 14px;
+	line-height: 18px;
+	text-transform: uppercase;
+	color: #000000;
+}
+
+.sort-item-disabled {
+	color: rgba(0, 0, 0, 0.30);
+}
+
+.pagination-item a {
+	color: #000000;
+	font-weight: 500;
+	text-transform: uppercase;
+	background-color: #eeeeee;
+	border-radius: 2px;
+}
+
+.pagination-item a:hover {
+	background-color: #dfdfdf;
+}
+
+.pagination-item a:active {
+	background-color: #dfdfdf;
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.pagination-item-current a,
+.pagination-item-current a:hover,
+.pagination-item-current a:focus,
+.pagination-item-current a:active {
+	background-color: #ffffff;
+	border: #eeeeee solid 2px;
+	border-radius: 2px;
+	color: #000000;
+}
+
+.footer-map h3 {
+	font-size: 18px;
+	color: #000000;
+	text-transform: uppercase;
+}
+
+.footer-social ul {
+	list-style: none;
+}
+
+.footer-social b {
+	font-size: 36px;
+	color: #000000;
+}
+
+.social-button {
+	color: inherit;
+}
+
+.modal-write-us {
+	color: #000000;
+	font-weight: 700;
+}
+
+.modal-write-us input,
+.modal-write-us textarea {
+	font: inherit;
+	font-weight: 300;
+	color: #444444;
+	
+	border: 2px solid #d7dcde;
+	border-radius: 3px;
+}
+
+.modal-write-us input:hover,
+.modal-write-us textarea:hover {
+	border: 2px solid #b4b9bb;
+}
+
+.modal-write-us input:hover,
+.modal-write-us textarea:hover {
+	border: 2px solid #000000;
+}
+
+.modal-write-us h2 {
+	color: #000000;
+	font-size: 45px;
+	font-weight: 500;
+}
+
+.write-us-form {
+
+}
+
